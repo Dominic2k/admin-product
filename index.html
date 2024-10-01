@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Quản lý sản phẩm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Quản lý sản phẩm</h1>
+    <button id="createProductBtn" class="button">Thêm</button>
+    <table id="productTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tên</th>
+          <th>Ảnh</th>
+          <th>Giá</th>
+          <th>Hành động</th>
+        </tr>
+      </thead>
+      <tbody id="productTableBody">
+      </tbody>
+    </table>
+</div>
+<!-- Modal Create/Edit Form -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <div class="close">&times;</div>
+        <h2 id="modalTitle">Create Product</h2>
+        <label for="productName">Tên:</label>
+        <input type="text" id="productName" placeholder="Nhập tên sản phẩm"><br>
+        <label for="productImage">Link Ảnh:</label>
+        <input type="text" id="productImage" placeholder="Nhập link ảnh"><br>
+        <label for="productPrice">Giá:</label>
+        <input type="number" id="productPrice" placeholder="Nhập giá sản phẩm"><br>
+        <button id="saveProductBtn" class="button">Tạo</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
